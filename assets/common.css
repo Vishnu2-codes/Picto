@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+@import './colors.css';
+
+
+
+body, h1, h2, h3, h4, h5, h6, p {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Handjet', cursive;
+}
+
+
+body{
+    background-color: var(--colourone);
+    min-height: calc(100vh- 5rem);
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+
+nav{
+    background-color: var(--colourtwo);
+    
+}
+nav .title{
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 5px rgb(156, 154, 149);
+    color: var(--colourfive);
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.75rem;
+    padding-left: 1%;
+}
+
+nav .logo{ 
+    height: 2.5rem;
+    margin-left: 0.75rem;
+    margin-top: 0.25rem;
+    padding-top: 0.15rem;
+}
+nav form{ 
+    gap: 3px;
+    display: inline;
+    float: right;
+    padding: 0.75rem;
+    padding-right: 1rem;
+}
+nav .search{
+    font-family:'Handjet', cursive ;
+    font-size: large;
+    padding: 0.25rem 0.75rem;
+}
+nav .search:focus{
+    outline: none;
+    border: 1.5px solid #FAA968;
+}
+.headings{
+    text-align: center;
+    margin: 1.0rem;
+}
+footer{
+    position: absolute;
+    bottom: 0%;
+    background-color: var(--colourthree);
+    width: 100%;
+    padding: 0.60rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+@media screen and (max-width: 800px){
+ body{
+    min-height: calc(100vh-10rem) !important;
+    padding-bottom: 10rem !important;
+ }
+    
+}
+@media screen and (max-width:340px) {
+    nav{
+        display: inline-block;
+        width: 100%;
+    }
+    nav form{
+        float: none;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
