@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE-Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PICTO | a photo search App</title>
+    <link rel="stylesheet" href="./assets/common.css">
+    <link rel="stylesheet" href="./assets/search.css">
+</head>
+<body>
+    
+    <NAV>
+        <a href="./index.html"> <img src="./assets/logo.png.png" alt="logo" class="logo"></a>
+        <a href="./index.html" class="title"><h1>PICTO</h1></a>
+        <form action="./search.html" method="get">
+           <input type="text" name="q" autocomplete="off" class="search" placeholder="search anything here"/>
+           <input type="submit" value="Search" class="search"/>
+        </form>
+   
+    </NAV>
+    <section>
+        <h1 class="headings">&lt;Search For - <span id="search_query"></span> /&gt;</h1>
+        <div class="container" id="result_container"></div>
+    </section>
+    <footer>
+        <a href=".#"><h5>Picto</h5></a> 
+        <pre> | </pre>
+        <h5>Designed and Developed by vishnu.</h5>       
+    </footer>
+    <script src="./assets/common.js"></script>
+    <script src="./assets/search.js"></script>
+</body>
+</html>
